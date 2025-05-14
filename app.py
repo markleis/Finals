@@ -1,5 +1,5 @@
 import streamlit as st
-import tflite_runtime.interpreter as tflite
+from tensorflow.lite.python.interpreter import Interpreter
 import numpy as np
 
 model = tf.keras.models.load_model('https://github.com/markleis/Finals/blob/main/perceptron_model.h5')
