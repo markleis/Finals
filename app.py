@@ -14,8 +14,8 @@ st.title("Simple Perceptron Classifier")
 st.write("Enter two binary values (0 or 1) to classify using TensorFlow Lite.")
 
 # User inputs
-x1 = st.number_input("Input X1 (0 or 1)", min_value=0, max_value=1, value=0)
-x2 = st.number_input("Input X2 (0 or 1)", min_value=0, max_value=1, value=0)
+x1 = st.number_input("Input X1 (0 or 1)", min_value=0, max_value=100, value=0)
+x2 = st.number_input("Input X2 (0 or 1)", min_value=0, max_value=100, value=0)
 
 if st.button("Predict"):
     input_data = np.array([[x1, x2]], dtype=np.float32)
