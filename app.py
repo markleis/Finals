@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+!pip install tensorflow
 
 # Load saved model
 model = tf.keras.models.load_model('/content/drive/MyDrive/perceptron_model.h5')
