@@ -1,6 +1,5 @@
 import streamlit as st
-import keras
-from keras.models import load_model
+import tflite_runtime.interpreter as tflite
 import numpy as np
 
 model = tf.keras.models.load_model('/content/drive/MyDrive/perceptron_model.h5')
