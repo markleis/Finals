@@ -2,7 +2,7 @@ import streamlit as st
 import tflite_runtime.interpreter as tflite
 import numpy as np
 
-model = tf.keras.models.load_model('/content/drive/MyDrive/perceptron_model.h5')
+model = tf.keras.models.load_model('https://github.com/markleis/Finals/blob/main/perceptron_model.h5')
 
 st.title("Simple Perceptron Classifier")
 st.write("Enter two binary values (0 or 1) to classify using Perceptron.")
